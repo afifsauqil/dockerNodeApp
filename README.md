@@ -13,7 +13,6 @@ npm install nodemon
 npm install --save-dev mocha
 ```
 
-```
 run image using docker-compose :
 ```
 docker-compose -f docker-compose.dev.yml up --build -d
