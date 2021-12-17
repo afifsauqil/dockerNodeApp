@@ -20,5 +20,9 @@ docker-compose -f docker-compose.dev.yml up --build -d
 
 test web app :
 ```
-curl http://localhost:8000
+curl http://localhost:8000/test
+```
+output :
+```
+{"code":"success","meta":{"total":0,"count":0},"payload":[]}
 ```
