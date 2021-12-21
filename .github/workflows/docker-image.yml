@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/node-app-dev:latest
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/nodejs-app-dev:latest
     - name: Push image to docker hub
       env: 
           username: ${{ secrets.DOCKER_HUB_USERNAME }} 
